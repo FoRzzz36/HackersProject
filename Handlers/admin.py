@@ -4,7 +4,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from Forms import FormCType, FormCSale, FormCCity, FormCLink, FormCName, FormCAdress, FormCImg, FormCDesc
 from kb.inline import get_admin_choice_mod, get_cities_menu_keyboard, \
-    get_type_menu_keyboard, get_placesmenu_by_parms, get_info_about_place_to_change, get_back_button, get_admin_menu_button
+    get_type_menu_keyboard, get_placesmenu_by_parms, get_info_about_place_to_change, get_back_button, get_admin_choice_stat_mod
 from settings import Places
 
 Admin = Router()
@@ -14,7 +14,8 @@ obj_now=[None]
 
 @Admin.message(CommandStart())
 async def start_cmd(message: types.Message):
-    await message.answer('Приветствие', reply_markup=get_admin_choice_mod())
+    await message.answer('Доброго времени суток! Какие изменения мы хотим внести на этот раз?🤔',
+                         reply_markup=get_admin_choice_mod())
 
 @Admin.callback_query(F.data == 'change_data')
 async def change_data(callback: types.CallbackQuery):
@@ -25,7 +26,8 @@ async def change_data(callback: types.CallbackQuery):
 @Admin.callback_query(F.data == "back_2")
 async def back_2(callback = types.CallbackQuery):
     await callback.answer()
-    await callback.message.edit_text('Приветствие', reply_markup=get_admin_choice_mod())
+    await callback.message.answer('Доброго времени суток! Какие изменения мы хотим внести на этот раз?🤔',
+                         reply_markup=get_admin_choice_mod())
 @Admin.callback_query(or_f(F.data == "klgd", F.data == "zel", F.data == "sve", F.data == 'yant',
                                  F.data == "pol", F.data == "cher", F.data == "all_cyt"))
 async def citiesmenu_handle(callback: types.CallbackQuery):
@@ -201,3 +203,9 @@ async def change_sale(message: types.Message, state: FSMContext):
             await message.answer('Вы ввели неправильные данные❌\nПопробуйте еще раз:')
     except:
         await message.answer('Вы ввели неправильные данные❌\nПопробуйте еще раз:')
+
+@Admin.callback_query(F.data == "show_stat")
+async def back4_handle(callback: types.CallbackQuery):
+    await callback.answer()
+    await callback.message.edit_text('Выберете какую статистику вы хотите увидеть📊:',
+                                     reply_markup=get_admin_choice_stat_mod())

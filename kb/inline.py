@@ -35,10 +35,10 @@ def get_type_menu_keyboard():
     keyboard_builder.button(text="🔥 Развлечения", callback_data="ent")
     keyboard_builder.button(text="🍽️ Питание", callback_data="food")
     keyboard_builder.button(text="🏠 Проживание", callback_data='liv')
-    keyboard_builder.button(text="🚗 Порокат", callback_data="driv")
+    keyboard_builder.button(text="🚗 Прокат", callback_data="driv")
     keyboard_builder.button(text="💆 СПА", callback_data="SPA")
     keyboard_builder.button(text="🎁 Сувениы", callback_data="suv")
-    keyboard_builder.button(text="🏕️ Турестические фирмы", callback_data="tur")
+    keyboard_builder.button(text="🏕️ Туристические фирмы", callback_data="tur")
     keyboard_builder.button(text="✨ Все", callback_data="all_typ")
     keyboard_builder.button(text="Назад↩", callback_data="back_3")
     return keyboard_builder.adjust(2, repeat=True).as_markup()
@@ -65,8 +65,8 @@ def get_info_about_place(place):
 
 def get_admin_choice_mod():
     keyboard_builder = InlineKeyboardBuilder()
-    keyboard_builder.button(text="Обновить данные по акции📈", callback_data="change_data")
-    keyboard_builder.button(text="Посмотреть статистику✏", callback_data="start_work")
+    keyboard_builder.button(text="Обновить данные по акции✏", callback_data="change_data")
+    keyboard_builder.button(text="Посмотреть статистику📈", callback_data="show_stat")
     return keyboard_builder.adjust(1, 1).as_markup()
 
 def get_info_about_place_to_change(s):
@@ -86,3 +86,11 @@ def get_admin_menu_button():
     keyboard_builder = InlineKeyboardBuilder()
     keyboard_builder.button(text="В главное меню↩", callback_data="main_menu_admin")
     return keyboard_builder.as_markup()
+
+def get_admin_choice_stat_mod():
+    keyboard_builder = InlineKeyboardBuilder()
+    keyboard_builder.button(text="Показать оценку сервиса⭐", callback_data="show_rate")
+    keyboard_builder.button(text="Показать Топ 10 самых посещаемых мест📈", callback_data="show_stat")
+    keyboard_builder.button(text="Показать Топ 5 самых непосещаемых мест📉", callback_data="show_stat")
+    keyboard_builder.button(text="Назад↩", callback_data="back_2")
+    return keyboard_builder.adjust(1, 1).as_markup()

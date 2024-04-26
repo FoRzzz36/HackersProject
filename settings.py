@@ -1,5 +1,13 @@
 TOKEN = '7103232264:AAESatXlx37iskjifdhUrC2cMEr8nvcLFdQ'
-
+ADMIN_LIST = [5262861921]
+Sticker_list=['CAACAgIAAxkBAAEL_wJmK8sIPItCO2PdIBiDA_mKe5CC4gACsE4AAqqAYElxmxmtzTyqNDQE',
+              'CAACAgIAAxkBAAEL_wRmK8sk6NEgJ4-ziAwZaPgCeGi2cwACRkwAAp-cYEkeZC6DWFbtYzQE',
+              'CAACAgIAAxkBAAEL_wZmK8s1zZfRfFVn5DMZHeye_6QLcAAC6UsAAhpZYUkfHD_iDP5LNTQE',
+              'CAACAgIAAxkBAAEL_whmK8tFczd1xieoE7DADhNYT19nlgACfFEAAlTlYUn1ghUS72PLfTQE',
+              'CAACAgIAAxkBAAEL_wpmK8tVBfQV__eYFHZU4jRwX83N_gACrUQAAslZYEksRJ3gRm8_ZjQE',
+              'CAACAgIAAxkBAAEL_wxmK8t4glsnnZpP9MkfV1t-eyiAtgACGE8AAiSVYUmuAhOMsI2p_DQE',
+              'CAACAgIAAxkBAAEL_w5mK8uDGlcywgac9CGmkU8IRUdRmwACyVMAAiz5YEmnAoZrpicLqzQE'
+              ]
 Places=[
     [
         'Форт № 1 Штайн',#Название
