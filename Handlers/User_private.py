@@ -85,8 +85,8 @@ async def place_info_handle(callback: types.CallbackQuery, bot : Bot):
     await callback.message.edit_media(media=types.InputMediaPhoto(media=Places[int(callback.data)][7]))
     await callback.message.edit_caption(caption=f"CКИДКА {place_now[4]}%!!\n{place_now[0]} - это {place_now[2]}.\n"
                                      f"Находится по адрессу: {place_now[1]}.\n"
-                                     f"Подробнее про это вы можете узнать на нашем сайте: {place_now[3]}\
-                                     nХотите оставить отзыв об этом месте?", reply_markup=get_info_about_place(place_now))
+                                     f"Подробнее про это вы можете узнать на нашем сайте: {place_now[3]}\n"
+                                                f"Хотите оставить отзыв об этом месте?", reply_markup=get_info_about_place(place_now))
 
 @UserPrivate.callback_query(F.data == "back_5")
 async def back5_handle(callback: types.CallbackQuery, bot : Bot):
