@@ -1,5 +1,6 @@
 TOKEN = '7103232264:AAESatXlx37iskjifdhUrC2cMEr8nvcLFdQ'
-ADMIN_LIST = [5262861921]
+#ADMIN_LIST = [5262861921]
+ADMIN_LIST = []
 Sticker_list=['CAACAgIAAxkBAAEL_wJmK8sIPItCO2PdIBiDA_mKe5CC4gACsE4AAqqAYElxmxmtzTyqNDQE',
               'CAACAgIAAxkBAAEL_wRmK8sk6NEgJ4-ziAwZaPgCeGi2cwACRkwAAp-cYEkeZC6DWFbtYzQE',
               'CAACAgIAAxkBAAEL_wZmK8s1zZfRfFVn5DMZHeye_6QLcAAC6UsAAhpZYUkfHD_iDP5LNTQE',
@@ -8,6 +9,9 @@ Sticker_list=['CAACAgIAAxkBAAEL_wJmK8sIPItCO2PdIBiDA_mKe5CC4gACsE4AAqqAYElxmxmtz
               'CAACAgIAAxkBAAEL_wxmK8t4glsnnZpP9MkfV1t-eyiAtgACGE8AAiSVYUmuAhOMsI2p_DQE',
               'CAACAgIAAxkBAAEL_w5mK8uDGlcywgac9CGmkU8IRUdRmwACyVMAAiz5YEmnAoZrpicLqzQE'
               ]
+
+blank_photo = 'AgACAgIAAxkBAAIDvGYsF8AKjQnhDSqEzmN4hlCXLib8AAIV1jEbKh1hSdlS33AetLsnAQADAgADeAADNAQ'
+
 Places=[
     [
         'Форт № 1 Штайн',#Название
@@ -17,7 +21,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'kult',
-        '0.jpg'
+        'AgACAgIAAxkBAAID_WYsJjQdCybefLY5RDFg4WevdWRpAALd1TEbKh1hSQJzmfsRL2DcAQADAgADeAADNAQ'
 
     ],[
         'ТУРИСТИЧЕСКАЯ ФИРМА «КОРОЛЕВСКИЙ ЗАМОК»',#Название
@@ -27,7 +31,7 @@ Places=[
         7,#Cкидка
         'klgd',
         'tur',
-        '1.jpeg'
+        'AgACAgIAAxkBAAIEKWYsKndvlwRpEGmZGZ6GBNFErIZLAAIk1jEbKh1hSV6pOQABxUI7EwEAAwIAA3gAAzQE'
     ],[
         'ТУРИСТИЧЕСКАЯ ФИРМА «ЮНОНА»',#Название
         'Калининград, г. Калининград, ул. Октябрьская, 8, головной офис - ул. Октябрьская , д. 57',#адесс
@@ -36,7 +40,7 @@ Places=[
         5,#Cкидка
         'klgd',
         'tur',
-        '2.png'
+        'AgACAgIAAxkBAAIEK2YsKoOz5ZqIUmTQNMV6892GkkOeAAIl1jEbKh1hSf0hK1i3nh8VAQADAgADeAADNAQ'
     ],[
         'ТУРИСТИЧЕСКАЯ ФИРМА "ЦВЕТ ПРОГУЛКИ"',#Название
         'Калининград, Проспект Мира, д. 108',#адесс
@@ -45,7 +49,7 @@ Places=[
         7,#Cкидка
         'klgd',
         'tur',
-        '3.jpg'
+        'AgACAgIAAxkBAAIELWYsKomUWNgo82wc45FXoIlsUskmAAIm1jEbKh1hSSBDstG4MSeVAQADAgADeAADNAQ'
     ],
     [
         'ФОРТ №11 "ДЁНХОФ"',#Название
@@ -55,7 +59,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'kult',
-        '4.jpg'
+        'AgACAgIAAxkBAAIEL2YsKo-QyouwfWnJLFLdZlHJUIL8AAIn1jEbKh1hSVQWUdL-Kd8PAQADAgADeAADNAQ'
     ],
     [
         'КАЛИНИНГРАДСКИЙ ОБЛАСТНОЙ МУЗЕЙ ИЗОБРАЗИТЕЛЬНЫХ ИСКУССТВ',#Название
@@ -65,7 +69,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'kult',
-        '5.jpg'
+        'AgACAgIAAxkBAAIEMWYsKpNcBYl91VXlw4H-9Ooqsr3QAAIo1jEbKh1hSa0EAVoQvNKEAQADAgADeAADNAQ'
     ],
     [
         'ПИВОВАРНЯ PONARTH (ПОНАРТ)',#Название
@@ -75,7 +79,7 @@ Places=[
         15,#Cкидка
         'klgd',
         'ent',
-        '6.jpg'
+        'AgACAgIAAxkBAAIEM2YsKpvEPntXuOg-FB2IqYdYMC9MAAIr1jEbKh1hSe6ImT2AnY0XAQADAgADeQADNAQ'
     ],
     [
         'КАФЕ-ЛАВКА "ХОМЛИНЫ"',#Название
@@ -85,7 +89,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'food',
-        '7.jpeg'
+        'AgACAgIAAxkBAAIENWYsKqR9Ugsik2cBRctM6B8B6y2ZAAIs1jEbKh1hSQ_tX4KXPY4UAQADAgADeAADNAQ'
     ],
     [
         'МАГАЗИН ОДЕЖДЫ "MOLINIALIFE" (МОЛИНИЯ ЛАЙФ)',#Название
@@ -95,7 +99,7 @@ Places=[
         5,#Cкидка
         'klgd',
         'suv',
-        '8.jpg'
+        'AgACAgIAAxkBAAIEN2YsKq0zpy2j3x8oFZJINY2x49F5AAIt1jEbKh1hSa6F2tQf6Vs9AQADAgADeAADNAQ'
     ],
     [
         'ГАСТРОЛАВКА "БУРРАТА"',#Название
@@ -105,7 +109,7 @@ Places=[
         5,#Cкидка
         'klgd',
         'food',
-        '9.jpeg'
+        'AgACAgIAAxkBAAIEOWYsKrXZD9BPnCgdt9KGqAebR2oQAAIu1jEbKh1hSaZcd3sfJ-m2AQADAgADeAADNAQ'
     ],
     [
         'МАГАЗИН ЯНТАРНОЙ КОСМЕТИКИ "AMBERICA" (АМБЕРИКА)',#Название
@@ -115,7 +119,7 @@ Places=[
         5,#Cкидка
         'klgd',
         'suv',
-        '10.jpeg'
+        'AgACAgIAAxkBAAIEO2YsKr0QJmow8eXOkJluhDXNpH4xAAIv1jEbKh1hSbv16M9PUGJtAQADAgADeAADNAQ'
     ],
     [
         'КАФЕ "ТРДЕЛЬНИК"',#Название
@@ -125,7 +129,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'food',
-        '11.jpg'
+        'AgACAgIAAxkBAAIEPWYsK4Em_W_f1Qf3baV99W5g-c8nAAIw1jEbKh1hSbagyMpyi8DaAQADAgADeQADNAQ'
     ],
     [
         'МУЗЕЙ «ЛЕГЕНДЫ СТАРОГО ГОРОДА»',#Название
@@ -135,7 +139,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'kult',
-        '12.jpg'
+        'AgACAgIAAxkBAAIEP2YsK4SGvEkpd0SyJZZnA2Ulz91uAAIx1jEbKh1hSY5ERB2vHl6zAQADAgADeAADNAQ'
     ],
     [
         'МУЗЕЙНОЕ ПРОСТРАНСТВО «РАТСХОФХАУС»',#Название
@@ -145,7 +149,7 @@ Places=[
         20,#Cкидка
         'klgd',
         'kult',
-        '13.jpg'
+        'AgACAgIAAxkBAAIEQWYsK4uDDj1ioZZHeFjO73Cm1-LEAAIy1jEbKh1hSa_QYHDKeg8BAQADAgADeAADNAQ'
     ],
     [
         'КАФЕ "BRAVO ITALIA" (БРАВО ИТАЛИЯ)',#Название
@@ -155,7 +159,7 @@ Places=[
         15,#Cкидка
         'klgd',
         'food',
-        '14.jpeg'
+        'AgACAgIAAxkBAAIEQ2YsK5EMUQRL9nNmmCIiZZNU4o5xAAI01jEbKh1hSdN4Z6bpQPXJAQADAgADeAADNAQ'
     ],
     [
         'ЯНТАРНАЯ И НАТУРАЛЬНАЯ КОСМЕТИКА "SPRING"',#Название
@@ -165,7 +169,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'suv',
-        '15.jpg'
+        'AgACAgIAAxkBAAIERWYsK5XIxY4V4E2aaac6yJm3cdBaAAI11jEbKh1hSdGP9CW7QNlrAQADAgADeAADNAQ'
     ],
     [
         'ПАБ-РЕСТОРАН "ДЖЕНТЛМЕНЫ"',#Название
@@ -175,7 +179,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'food',
-        '16.jpg'
+        'AgACAgIAAxkBAAIER2YsK51Yk7D-FFa7hVQkti_Pr_0nAAI21jEbKh1hSdKSSsUjrddPAQADAgADeAADNAQ'
     ],
     [
         'РЕСТОРАН - ПИВОВАРНЯ "ХМЕЛЬ"',#Название
@@ -185,7 +189,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'food',
-        '17.jpg'
+        'AgACAgIAAxkBAAIESWYsK6AbmaQe6P9-2gQj0S9cleLxAAI31jEbKh1hSc7SUdFcEMJMAQADAgADeAADNAQ'
     ],
     [
         'АВТОПРОКАТ "PAVLOV"',#Название
@@ -195,7 +199,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'driv',
-        '18.png'
+        'AgACAgIAAxkBAAIES2YsK6lSwNtJBn74-2xKrx_0CwmJAAI41jEbKh1hScl0zjomz4l3AQADAgADeAADNAQ'
     ],
     [
         'АРЕНДА АПАРТАМЕНТОВ PAVLOV',#Название
@@ -205,7 +209,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'liv',
-        '19.jpg'
+        'AgACAgIAAxkBAAIETWYsK64vFle6lgyHum71_D0XQjHcAAI51jEbKh1hSdYbvVwNrqPfAQADAgADeAADNAQ'
     ],
     [
         'ПЕРВЫЙ РЫБНЫЙ РЕСТОРАН "СОЛНЕЧНЫЙ КАМЕНЬ"',#Название
@@ -215,7 +219,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'food',
-        '20.jpg'
+        'AgACAgIAAxkBAAIET2YsK7ZKYsYXAbz10_9FmYA_99BEAAI61jEbKh1hScQ6R4fiDYWWAQADAgADeAADNAQ'
     ],
     [
         'МАГАЗИН СУВЕНИРОВ "РЫЖАЯ ЗАРЯ"',#Название
@@ -225,7 +229,7 @@ Places=[
         4,#Cкидка
         'klgd',
         'suv',
-        '21.jpg'
+        'AgACAgIAAxkBAAIEVmYsMCk_Ita5f9Et4H_dIECG03NvAAI71jEbKh1hSXmdfA3M4rzGAQADAgADeAADNAQ'
     ],
     [
         'РЕСТОРАН "KAISER WURST" (КАЙЗЕРВУРСТ)',#Название
@@ -235,7 +239,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'food',
-        '22.jpg'
+        'AgACAgIAAxkBAAIEWGYsMDYAAdT2XgVMRiKxNGEsLrMHjAACPNYxGyodYUnjkfwdjTiK7gEAAwIAA3gAAzQE'
     ],
     [
         'ТЕРМАЛЬНЫЙ КОМПЛЕКС "ПЛЯЖ ПОСЕЙДОН"',#Название
@@ -245,7 +249,7 @@ Places=[
         15,#Cкидка
         'klgd',
         'SPA',
-        '23.jpg'
+        'AgACAgIAAxkBAAIEWmYsMESV7BKuFhVpvMsHFPSKQwGMAAI91jEbKh1hSfQVmhLZw7e4AQADAgADeAADNAQ'
     ],
     [
         'МУЗЕЙ МИРОВОГО ОКЕАНА',#Название
@@ -255,17 +259,17 @@ Places=[
         10,#Cкидка
         'klgd',
         'kult',
-        '24.jpg'
+        'AgACAgIAAxkBAAIEXGYsMEpw4M63ogKWc8gdPbdBBHpEAAI-1jEbKh1hSctKZra8cV0AAQEAAwIAA3gAAzQE'
     ],
     [
         'ПРОКАТ КАТАМАРАНОВ "ПОСЕЙДОН"',#Название
         'Калининград, ул. Пролетарская, 98',#адесс
-        'прокат, который предложить вам водные прогулки на катамаранах в центре города.',#Описание
+        'прокат, который предложит вам водные прогулки на катамаранах в центре города.',#Описание
         'https://visit-kaliningrad.ru/guestcard/prokat-katamaranov-poseydon/',#Ссылка на сайт
         10,#Cкидка
         'klgd',
         'driv',
-        '25.jpg'
+        'AgACAgIAAxkBAAIEXmYsMFAFuVEcYSVG5f5DUgMFktVGAAI_1jEbKh1hScwdmn6SI1QFAQADAgADeAADNAQ'
     ],
     [
         'КАЛИНИНГРАДСКИЙ ОБЛАСТНОЙ ИСТОРИКО-ХУДОЖЕСТВЕННЫЙ МУЗЕЙ',#Название
@@ -275,7 +279,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'kult',
-        '26.jpg'
+        'AgACAgIAAxkBAAIEYGYsMFQryMZHU0ZPnnBa-wAB40y34gACQNYxGyodYUkmG9J6CtV0awEAAwIAA3gAAzQE'
     ],
     [
         'ТУРИСТИЧЕСКАЯ ФИРМА "УНИВЕРСАЛ-ТУР"',#Название
@@ -285,7 +289,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'tur',
-        '27.png'
+        'AgACAgIAAxkBAAIEYmYsMFnwv92Dvrq_zRa3ZEZ9KOluAAJB1jEbKh1hSZt-LkjEYjrAAQADAgADeAADNAQ'
     ],
     [
         'САЛОН "AMBER SEA"',#Название
@@ -295,7 +299,7 @@ Places=[
         10,#Cкидка
         'klgd',
         'suv',
-        '28.jpg'
+        'AgACAgIAAxkBAAIEZGYsMGBGzQ_Dm0UNbBcJXVtmFcbPAAJC1jEbKh1hSUCxXuMR4Ck2AQADAgADeAADNAQ'
     ],
     [
         'МУЗЕЙ ЯНТАРЯ',#Название
@@ -305,7 +309,7 @@ Places=[
         3,#Cкидка
         'klgd',
         'kult',
-        '29.jpg'
+        'AgACAgIAAxkBAAIEZmYsMGi3g--rFxmi4OT2e4CIqlUAA0PWMRsqHWFJTY2jR7k9L0ABAAMCAAN4AAM0BA'
     ],
     [
         'ТУРИСТИЧЕСКАЯ ФИРМА «ЮНОНА»',#Название
@@ -315,7 +319,7 @@ Places=[
         5,#Cкидка
         'zel',
         'tur',
-        '2.png'
+        'AgACAgIAAxkBAAIEK2YsKoOz5ZqIUmTQNMV6892GkkOeAAIl1jEbKh1hSf0hK1i3nh8VAQADAgADeAADNAQ'
     ],
     [
         'МАГАЗИН ЯНТАРНОЙ КОСМЕТИКИ "AMBERICA" (АМБЕРИКА)',#Название
@@ -325,7 +329,7 @@ Places=[
         5,#Cкидка
         'zel',
         'suv',
-        '30.jpeg'
+        'AgACAgIAAxkBAAIEaGYsMG6Ht8bEgY_MWWlbo8iGV5W6AAJE1jEbKh1hSeGbaU3qs-4LAQADAgADeAADNAQ'
     ],
     [
         'БРЕНД «AMBERIAS JEWELRY»',#Название
@@ -335,7 +339,7 @@ Places=[
         7,#Cкидка
         'zel',
         'suv',
-        '31.jpeg'
+        'AgACAgIAAxkBAAIEamYsMkrfJtmbrYMqySVBJuiItLHGAAJF1jEbKh1hSVw7RfCT8p23AQADAgADeAADNAQ'
     ],
     [
         'ГРЦ «ПАРАDOX»',#Название
@@ -345,7 +349,7 @@ Places=[
         10,#Cкидка
         'zel',
         'kult',
-        '32.jpg'
+        'AgACAgIAAxkBAAIEbGYsMk1VOkMsHi6An2We2Qa3ax80AAJG1jEbKh1hSZyuoUmcU9jzAQADAgADeAADNAQ'
     ],
     [
         'АВТОПРОКАТ "PAVLOV"',#Название
@@ -355,7 +359,7 @@ Places=[
         10,#Cкидка
         'zel',
         'driv',
-        '18.png'
+        'AgACAgIAAxkBAAIES2YsK6lSwNtJBn74-2xKrx_0CwmJAAI41jEbKh1hScl0zjomz4l3AQADAgADeAADNAQ'
     ],
     [
         'ТУРИСТИЧЕСКАЯ ФИРМА «ПЛАНЕТА»',#Название
@@ -365,7 +369,7 @@ Places=[
         10,#Cкидка
         'sve',
         'tur',
-        '33.jpg'
+        'AgACAgIAAxkBAAIEbmYsMlACXonGDpzYMC4cRF3li7cFAAJH1jEbKh1hSXJl450EQEwVAQADAgADbQADNAQ'
     ],
     [
         'ДОМ-МУЗЕЙ ГЕРМАНА БРАХЕРТА',#Название
@@ -375,7 +379,7 @@ Places=[
         20,#Cкидка
         'sve',
         'kult',
-        '34.jpg'
+        'AgACAgIAAxkBAAIEcGYsMlULnGE7Gd2wpTT0ZKrH73SsAAJI1jEbKh1hSZsoxTT93f3eAQADAgADeAADNAQ'
     ],
     [
         'ТУРИСТИЧЕСКАЯ ФИРМА "УНИВЕРСАЛ-ТУР"',#Название
@@ -385,7 +389,7 @@ Places=[
         10,#Cкидка
         'sve',
         'tur',
-        '27.png'
+        'AgACAgIAAxkBAAIEYmYsMFnwv92Dvrq_zRa3ZEZ9KOluAAJB1jEbKh1hSZt-LkjEYjrAAQADAgADeAADNAQ'
     ],
     [
         'МОРСКОЙ ВЫСТАВОЧНЫЙ ЦЕНТР МУЗЕЯ МИРОВОГО ОКЕАНА',#Название
@@ -395,7 +399,7 @@ Places=[
         10,#Cкидка
         'sve',
         'kult',
-        '35.jpg'
+        'AgACAgIAAxkBAAIEcmYsMl0vSqvoNs_cgrl-V7Zo1-JPAAJJ1jEbKh1hSbrEIIqmodesAQADAgADeAADNAQ'
     ],
     [
         'САЛОН "AMBER SEA"',#Название
@@ -405,7 +409,7 @@ Places=[
         10,#Cкидка
         'yant',
         'suv',
-        '36.jpg'
+        'AgACAgIAAxkBAAIEdGYsMmMnkTbcifNuqFSA-JtB6Q0EAAJK1jEbKh1hSSZfIj_QSZW_AQADAgADeAADNAQ'
     ],
     [
         'СТАРЫЙ МАЯК В ПОС. ЗАЛИВИНО НА БЕРЕГУ КУРШСКОГО ЗАЛИВА',#Название
@@ -415,7 +419,7 @@ Places=[
         10,#Cкидка
         'pol',
         'kult',
-        '37.jpg'
+        'AgACAgIAAxkBAAIEdmYsMmc3-gbQv_ceggPD0jZ7lDKDAAJL1jEbKh1hSSp2mcTOKdV-AQADAgADeAADNAQ'
     ],
     [
         'ЦЕНТР ОТДЫХА "АНГЕЛ"',#Название
@@ -425,7 +429,7 @@ Places=[
         10,#Cкидка
         'cher',
         'liv',
-        '38.jpg'
+        'AgACAgIAAxkBAAIEeGYsMm9TnQcfCgmpw8eOYeVpZfk1AAJM1jEbKh1hSeJThRrQDPSwAQADAgADeAADNAQ'
     ]
 
 ]

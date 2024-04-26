@@ -1,7 +1,7 @@
 import asyncio
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher, types, F
 import random
-from settings import TOKEN, Places
+from settings import TOKEN, Places, blank_photo
 from Handlers.User_private import UserPrivate
 from aiogram.filters import CommandStart
 
@@ -18,13 +18,17 @@ dp=Dispatcher()
 dp.message()
 #dp.include_router(UserPrivate)
 #dp.include_router(Admin)
-
+@dp.message(F.photo)
+async def get_photo(msg: types.Message):
+    await msg.answer(f'ID фото: {msg.photo[-1].file_id}')
 @dp.message(CommandStart())
-async def show_id(msg: types.Message):
+async def start(msg: types.Message):
     await msg.answer_sticker(random.choice(Sticker_list))
     if msg.from_user.id in ADMIN_LIST:
-        await msg.answer('Доброго времени суток! Какие изменения мы хотим внести на этот раз?🤔',
+        await msg.answer_photo(blank_photo, 'Доброго времени суток! Какие изменения мы хотим внести на этот раз?🤔',
                              reply_markup=get_admin_choice_mod())
+        # await msg.answer('Доброго времени суток! Какие изменения мы хотим внести на этот раз?🤔',
+        #                      reply_markup=get_admin_choice_mod())
         dp.include_router(Admin)
     else:
         await msg.answer(
