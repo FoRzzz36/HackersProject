@@ -11,9 +11,9 @@ IsAgree = False
 PlacePar=[None,None]
 photo_to_del=None
 
-@UserPrivate.message(F.photo)
-async def get_photo(msg: types.Message):
-    await msg.answer(f'ID фото: {msg.photo[-1].file_id}')
+# @UserPrivate.message(F.photo)
+# async def get_photo(msg: types.Message):
+#     await msg.answer(f'ID фото: {msg.photo[-1].file_id}')
 @UserPrivate.message(CommandStart())
 async def start_cmd(message: types.Message):
     await message.answer('Приветствие')
@@ -45,39 +45,48 @@ async def back12_handle(callback: types.CallbackQuery):
 @UserPrivate.callback_query(F.data == "start_work")
 async def startwork_handle(callback: types.CallbackQuery):
     await callback.answer()
-    await callback.message.edit_text('Выберете город в котором хотите отдохнуть:', reply_markup=get_cities_menu_keyboard())
+    await callback.message.edit_text('Выберете город в котором хотите отдохнуть📂:', reply_markup=get_cities_menu_keyboard())
 
-#@UserPrivate.callback_query(F.data == "klgd" or F.data == "zel" or F.data == "sve" or F.data == 'yant' or F.data == "pol" or F.data == "cher")
+
 @UserPrivate.callback_query(or_f(F.data == "klgd", F.data == "zel", F.data == "sve", F.data == 'yant',
                                  F.data == "pol", F.data == "cher", F.data == "all_cyt"))
 async def citiesmenu_handle(callback: types.CallbackQuery):
     await callback.answer()
     PlacePar[0]=callback.data
-    await callback.message.edit_text('Выберете как вы хотите отдохнуть:', reply_markup=get_type_menu_keyboard())
+    await callback.message.edit_text('Выберете как вы хотите отдохнуть📂:', reply_markup=get_type_menu_keyboard())
 
 @UserPrivate.callback_query(or_f(F.data == "kult", F.data ==  "ent", F.data ==  "food", F.data ==  'liv', F.data ==  "driv",
                             F.data == "SPA", F.data == "suv", F.data == "tur", F.data == "all_typ"))
 async def typemenu_handle(callback: types.CallbackQuery):
     await callback.answer()
     PlacePar[1]=callback.data
-    await callback.message.edit_text('Выберете интересюющие место:', reply_markup=get_placesmenu_by_parms(PlacePar))
+    await callback.message.edit_text('Выберете интересюющие место📂:', reply_markup=get_placesmenu_by_parms(PlacePar))
 
 @UserPrivate.callback_query(F.data == "back_3")
 async def back3_handle(callback: types.CallbackQuery):
     await callback.answer()
-    await callback.message.edit_text('Выберете город в котором хотите отдохнуть:',
+    await callback.message.edit_text('Выберете город в котором хотите отдохнуть📂:',
                                      reply_markup=get_cities_menu_keyboard())
 @UserPrivate.callback_query(F.data == "back_4")
 async def back4_handle(callback: types.CallbackQuery):
     await callback.answer()
-    await callback.message.edit_text('Выберете как вы хотите отдохнуть:', reply_markup=get_type_menu_keyboard())
+    await callback.message.edit_text('Выберете как вы хотите отдохнуть📂:', reply_markup=get_type_menu_keyboard())
 
-@UserPrivate.callback_query(or_f(F.data == '0', F.data == '1', F.data== '2', F.data == '3', F.data== '4', F.data == '5', F.data== '6', F.data == '7', F.data== '8', F.data == '9', F.data== '10', F.data == '11', F.data== '12'))
+@UserPrivate.callback_query(or_f(F.data == '0', F.data == '1', F.data== '2', F.data == '3', F.data== '4', F.data == '5',
+                                 F.data== '6', F.data == '7', F.data== '8', F.data == '9', F.data== '10', F.data == '11',
+                                 F.data== '12', F.data == '13', F.data == '14', F.data== '15', F.data == '16', F.data== '17',
+                                 F.data == '18', F.data== '19', F.data == '20', F.data== '21', F.data == '22', F.data== '23',
+                                 F.data == '24', F.data== '25', F.data== '26', F.data == '27', F.data== '28', F.data == '29',
+                                 F.data== '30', F.data == '31', F.data== '32', F.data == '33', F.data == '34', F.data== '35',
+                                 F.data == '36', F.data== '37', F.data == '38', F.data== '39', F.data == '40', F.data== '41',
+                                 F.data == '42'))
 async def place_info_handle(callback: types.CallbackQuery, bot : Bot):
     await callback.answer()
     place_now=Places[int(callback.data)]
-    await callback.message.edit_text(f"CКИДКА {place_now[4]}%!!\n{place_now[0]} - это {place_now[2]}.\nНаходится по адрессу: {place_now[1]}.\n"
-                                     f"Подробнее про это вы можете узнать на нашем сайте: {place_now[3]}\nХотите оставить отзыв об этом месте?", reply_markup=get_info_about_place(place_now))
+    await callback.message.edit_text(f"CКИДКА {place_now[4]}%!!\n{place_now[0]} - это {place_now[2]}.\n"
+                                     f"Находится по адрессу: {place_now[1]}.\n"
+                                     f"Подробнее про это вы можете узнать на нашем сайте: {place_now[3]}\
+                                     nХотите оставить отзыв об этом месте?", reply_markup=get_info_about_place(place_now))
 
 @UserPrivate.callback_query(F.data == "back_5")
 async def back5_handle(callback: types.CallbackQuery, bot : Bot):

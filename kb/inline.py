@@ -13,8 +13,8 @@ def get_back_button(s):
 
 def get_choice_mod():
     keyboard_builder = InlineKeyboardBuilder()
-    keyboard_builder.button(text="Напомнить как работает карта скидок", callback_data="card_work")
-    keyboard_builder.button(text="Начать работу", callback_data="start_work")
+    keyboard_builder.button(text="Напомнить как работает карта скидок➡", callback_data="card_work")
+    keyboard_builder.button(text="Начать работу📝", callback_data="start_work")
     return keyboard_builder.adjust(1, 1).as_markup()
 
 def get_cities_menu_keyboard():
@@ -62,3 +62,27 @@ def get_info_about_place(place):
     keyboard_builder.button(text="Оставить отзыв📊", callback_data="rate_place")
     keyboard_builder.button(text="Назад↩", callback_data="back_5")
     return keyboard_builder.adjust(1, 1).as_markup()
+
+def get_admin_choice_mod():
+    keyboard_builder = InlineKeyboardBuilder()
+    keyboard_builder.button(text="Обновить данные по акции📈", callback_data="change_data")
+    keyboard_builder.button(text="Посмотреть статистику✏", callback_data="start_work")
+    return keyboard_builder.adjust(1, 1).as_markup()
+
+def get_info_about_place_to_change(s):
+    keyboard_builder = InlineKeyboardBuilder()
+    keyboard_builder.button(text="Изменить скидку✏", callback_data=f"change_sale{s}")
+    keyboard_builder.button(text="Изменить адресс✏", callback_data=f"change_adress{s}")
+    keyboard_builder.button(text="Изменить ссылку на сайт✏", callback_data=f"change_link{s}")
+    keyboard_builder.button(text="Изменить название✏", callback_data=f"change_name{s}")
+    keyboard_builder.button(text="Изменить описание✏", callback_data=f"change_desc{s}")
+    keyboard_builder.button(text="Изменить город✏", callback_data=f"change_city{s}")
+    keyboard_builder.button(text="Изменить тип✏", callback_data=f"change_type{s}")
+    keyboard_builder.button(text="Изменить фото✏(в разработке🛠️)", callback_data=f"cange_foto{s}")
+    keyboard_builder.button(text="Назад↩", callback_data="back_5")
+    return keyboard_builder.adjust(1, 1).as_markup()
+
+def get_admin_menu_button():
+    keyboard_builder = InlineKeyboardBuilder()
+    keyboard_builder.button(text="В главное меню↩", callback_data="main_menu_admin")
+    return keyboard_builder.as_markup()
