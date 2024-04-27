@@ -23,3 +23,6 @@ class FormCDesc(StatesGroup):
 
 class FormCImg(StatesGroup):
     new_img = State()
+
+class FormRate_bot(StatesGroup):
+    msg = State()

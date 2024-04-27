@@ -15,6 +15,18 @@ def get_choice_mod():
     keyboard_builder = InlineKeyboardBuilder()
     keyboard_builder.button(text="Напомнить как работает карта скидок➡", callback_data="card_work")
     keyboard_builder.button(text="Начать работу📝", callback_data="start_work")
+    keyboard_builder.button(text="Оценить работу нашего бота⭐", callback_data="rate_work")
+    return keyboard_builder.adjust(1, 1).as_markup()
+
+def get_choice_rate():
+    keyboard_builder = InlineKeyboardBuilder()
+    keyboard_builder.button(text="", callback_data="rate_work_0")
+    keyboard_builder.button(text="⭐", callback_data="rate_work_1")
+    keyboard_builder.button(text="⭐⭐", callback_data="rate_work_2")
+    keyboard_builder.button(text="⭐⭐⭐", callback_data="rate_work_3")
+    keyboard_builder.button(text="⭐⭐⭐⭐", callback_data="rate_work_4")
+    keyboard_builder.button(text="⭐⭐⭐⭐⭐", callback_data="rate_work_5")
+    keyboard_builder.button(text="Назад↩", callback_data=f"back_2")
     return keyboard_builder.adjust(1, 1).as_markup()
 
 def get_cities_menu_keyboard():
@@ -37,7 +49,7 @@ def get_type_menu_keyboard():
     keyboard_builder.button(text="🏠 Проживание", callback_data='liv')
     keyboard_builder.button(text="🚗 Прокат", callback_data="driv")
     keyboard_builder.button(text="💆 СПА", callback_data="SPA")
-    keyboard_builder.button(text="🎁 Сувениы", callback_data="suv")
+    keyboard_builder.button(text="🎁 Сувениры", callback_data="suv")
     keyboard_builder.button(text="🏕️ Туристические фирмы", callback_data="tur")
     keyboard_builder.button(text="✨ Все", callback_data="all_typ")
     keyboard_builder.button(text="Назад↩", callback_data="back_3")
@@ -72,7 +84,7 @@ def get_admin_choice_mod():
 def get_info_about_place_to_change(s):
     keyboard_builder = InlineKeyboardBuilder()
     keyboard_builder.button(text="Изменить скидку✏", callback_data=f"change_sale{s}")
-    keyboard_builder.button(text="Изменить адресс✏", callback_data=f"change_adress{s}")
+    keyboard_builder.button(text="Изменить адрес✏", callback_data=f"change_adress{s}")
     keyboard_builder.button(text="Изменить ссылку на сайт✏", callback_data=f"change_link{s}")
     keyboard_builder.button(text="Изменить название✏", callback_data=f"change_name{s}")
     keyboard_builder.button(text="Изменить описание✏", callback_data=f"change_desc{s}")
