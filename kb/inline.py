@@ -71,7 +71,7 @@ def get_placesmenu_by_parms(rec):
 
 def get_info_about_place(place):
     keyboard_builder = InlineKeyboardBuilder()
-    keyboard_builder.button(text="Оставить отзыв📊", callback_data="rate_place")
+    keyboard_builder.button(text="Оставить отзыв📊(В разработке🛠️)", callback_data="rate_place")
     keyboard_builder.button(text="Назад↩", callback_data="back_5")
     return keyboard_builder.adjust(1, 1).as_markup()
 
